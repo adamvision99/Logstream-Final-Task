@@ -1,5 +1,5 @@
 def write_into_file(str1: list, str2: list):
-        with open('1', "w", encoding="utf8") as file:
+        with open('result', "w", encoding="utf8") as file:
             file.write(str(len(str1)))
             file.write('\n')
             file.write(str(len(str2)))
@@ -10,7 +10,7 @@ def script():
              '.', ':', ';', '[', ']', '<', '>', '(', ')', '«', '»', '!', '?', '…', '`', '——', '%']
     dictionary = {}
 
-    with open('test', encoding="utf-8") as file:
+    with open('test.txt', encoding="utf-8") as file:
         words = file.read().strip().lower().replace(',', '').replace('.', '').split()
 
     for w in words:
